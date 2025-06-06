@@ -1,4 +1,127 @@
+
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-1: #AC6AFF;
+  --color-2: #FFC876;
+  --color-3: #FF776F;
+  --color-4: #7ADB78;
+  --color-5: #858DFF;
+  --color-6: #FF98E2;
+
+  --stroke-1: #26242C;
+
+  --n-1: #FFFFFF;
+  --n-2: #CAC6DD;
+  --n-3: #ADA8C3;
+  --n-4: #757185;
+  --n-5: #3F3A52;
+  --n-6: #252134;
+  --n-7: #15131D;
+  --n-8: #0E0C15;
+  --n-9: #474060;
+  --n-10: #43435C;
+  --n-11: #1B1B2E;
+  --n-12: #2E2A41;
+  --n-13: #6C7275;
+
+  /* Font Families */
+  --font-sans: var(--font-sora), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-code: var(--font-code), monospace;
+  --font-grotesk: var(--font-grotesk), sans-serif;
+
+  /* Letter Spacing */
+  --tracking-tagline: 0.15em;
+
+  /* Spacing */
+  --spacing-0.25: 0.0625rem;
+  --spacing-7.5: 1.875rem;
+  --spacing-15: 3.75rem;
+  --spacing-999: 999px;
+
+  /* Opacity */
+  --opacity-15: 0.15;
+
+  /* Transitions */
+  --duration-default: 200ms;
+  --timing-default: linear;
+
+  /* Z-Index */
+  --z-1: 1;
+  --z-2: 2;
+  --z-3: 3;
+  --z-4: 4;
+  --z-5: 5;
+
+  /* Border Width */
+  --border-width-default: 0.0625rem;
+}
+
+/* Custom Background Images */
+.bg-radial-gradient {
+  background-image: radial-gradient(var(--tw-gradient-stops));
+}
+.bg-conic-gradient {
+  background-image: conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876);
+}
+
+/* Container */
+.container {
+  @apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-[3.75rem] xl:max-w-[87.5rem];
+}
+
+/* Typography */
+.h1 {
+  @apply font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem];
+}
+.h2 {
+  @apply text-[1.75rem] leading-[2.5rem] md:text-[2rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[3.5rem] xl:text-[3rem] xl:leading-tight;
+}
+.h3 {
+  @apply text-[2rem] leading-normal md:text-[2.5rem];
+}
+.h4 {
+  @apply text-[2rem] leading-normal;
+}
+.h5 {
+  @apply text-2xl leading-normal;
+}
+.h6 {
+  @apply font-semibold text-lg leading-8;
+}
+.body-1 {
+  @apply text-[0.875rem] leading-[1.5rem] md:text-[1rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-8;
+}
+.body-2 {
+  @apply font-light text-[0.875rem] leading-6 md:text-base;
+}
+.caption {
+  @apply text-sm;
+}
+.tagline {
+  font-family: var(--font-grotesk);
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: var(--tracking-tagline);
+}
+.quote {
+  font-family: var(--font-code);
+  @apply text-lg leading-normal;
+}
+.button {
+  font-family: var(--font-code);
+  @apply text-xs font-bold uppercase tracking-wider;
+}
+
+/* Utility */
+.tap-highlight-color {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* @import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -23,4 +146,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
