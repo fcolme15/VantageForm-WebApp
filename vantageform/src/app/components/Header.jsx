@@ -2,7 +2,6 @@
 
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
-import brainwave from "../assets/brainwave.svg";
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
@@ -46,8 +45,8 @@ const Header = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <div className="flex">
-          <a className="block w-[12rem] xl:mr-8" href="#hero">
-            <Image src={brainwave} width={190} height={40} alt="Brainwave" />
+          <a className="block w-[12rem] xl:mr-8 h-2 " href="#hero">
+            VantageForm
           </a>
         </div>
 
@@ -106,9 +105,10 @@ const Header = () => {
           New account
         </a>
 
-        <Button className="hidden lg:flex" href="#login">
+        <Button className="!hidden lg:!flex " href="#login">
           Sign in
         </Button>
+
 
         <Button
           className="ml-auto lg:hidden"
@@ -118,7 +118,7 @@ const Header = () => {
           <MenuSvg openNavigation={openNavigation} />
         </Button>
       </div>
-    </div>
+      </div>
   );
 };
 
